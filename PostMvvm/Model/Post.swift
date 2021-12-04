@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct Post :Decodable
+{
+    var id :Int? = 0
+    var title: String? = ""
+}

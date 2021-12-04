@@ -13,6 +13,10 @@
 		DC70E41D275BA31D00C51648 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC70E41B275BA31D00C51648 /* Main.storyboard */; };
 		DC70E41F275BA32300C51648 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC70E41E275BA32300C51648 /* Assets.xcassets */; };
 		DC70E422275BA32300C51648 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC70E420275BA32300C51648 /* LaunchScreen.storyboard */; };
+		DC70E42E275BA38600C51648 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC70E42D275BA38600C51648 /* Post.swift */; };
+		DC70E430275BA75A00C51648 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC70E42F275BA75A00C51648 /* PostTableViewCell.swift */; };
+		DC70E432275BA7AE00C51648 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC70E431275BA7AE00C51648 /* Webservice.swift */; };
+		DC70E436275BA9D900C51648 /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC70E435275BA9D900C51648 /* PostListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		DC70E41E275BA32300C51648 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC70E421275BA32300C51648 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC70E423275BA32300C51648 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC70E42D275BA38600C51648 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		DC70E42F275BA75A00C51648 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		DC70E431275BA7AE00C51648 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		DC70E435275BA9D900C51648 /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,10 @@
 		DC70E414275BA31D00C51648 /* PostMvvm */ = {
 			isa = PBXGroup;
 			children = (
+				DC70E42C275BA35B00C51648 /* Services */,
+				DC70E42B275BA35400C51648 /* ViewModel */,
+				DC70E42A275BA34F00C51648 /* Model */,
+				DC70E429275BA34A00C51648 /* View */,
 				DC70E415275BA31D00C51648 /* AppDelegate.swift */,
 				DC70E417275BA31D00C51648 /* SceneDelegate.swift */,
 				DC70E419275BA31D00C51648 /* ViewController.swift */,
@@ -65,6 +77,38 @@
 				DC70E423275BA32300C51648 /* Info.plist */,
 			);
 			path = PostMvvm;
+			sourceTree = "<group>";
+		};
+		DC70E429275BA34A00C51648 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DC70E42F275BA75A00C51648 /* PostTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DC70E42A275BA34F00C51648 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC70E42D275BA38600C51648 /* Post.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DC70E42B275BA35400C51648 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DC70E435275BA9D900C51648 /* PostListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DC70E42C275BA35B00C51648 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DC70E431275BA7AE00C51648 /* Webservice.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +181,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC70E436275BA9D900C51648 /* PostListViewModel.swift in Sources */,
 				DC70E41A275BA31D00C51648 /* ViewController.swift in Sources */,
 				DC70E416275BA31D00C51648 /* AppDelegate.swift in Sources */,
+				DC70E432275BA7AE00C51648 /* Webservice.swift in Sources */,
+				DC70E430275BA75A00C51648 /* PostTableViewCell.swift in Sources */,
 				DC70E418275BA31D00C51648 /* SceneDelegate.swift in Sources */,
+				DC70E42E275BA38600C51648 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
